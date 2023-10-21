@@ -1,0 +1,26 @@
+<title>Gallery</title>
+<h1>GALLERY</h1>
+<div class="recipe-container"></div>
+<div class="photoHolder">
+  <div class="imageDescription">
+    <div class="photo" style="background-image:url('images/pizza.jpg')">
+      <div class="button view">View</div>
+    </div>
+    <div class="description">
+        <div class="recipeTitle">Supreme Pizza</div>
+        <div class="briefDescription">Make pizza</div>
+      </div>
+    </div>
+  </div>
+  <div class="button-holder">
+    <div class="button">Edit Recipe</div>
+    <div class="button">Delete</div>
+  </div>
+</div>
+<script>
+  $(document).ready(function() {
+    $(".button").click(function (e) {
+      alert("Button name: " + $(this).text());
+    });
+  });
+</script>
